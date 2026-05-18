@@ -1,3 +1,4 @@
+//problem statement: 
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -26,13 +27,13 @@ int main()
         }
         else
         {
-            if (a * 3 < b)
+            if (a * 3 <= b)
             {
                 cout << a * n << endl;
             }
             else
             {
-                cout << b * (n / 3) + (n % 3) * a << endl;
+                cout << min((b * (n / 3) + (n % 3) * a), (b * (n / 3 + 1))) << endl;
             }
         }
     }
